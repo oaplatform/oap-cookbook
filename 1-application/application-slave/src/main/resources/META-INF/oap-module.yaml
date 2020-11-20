@@ -1,0 +1,11 @@
+name: application-master
+services:
+  calculator-master:
+    implementation: oap.cookbook.StackCalculator
+    remote:
+      name: stack-calculator
+
+  plusminuscalculator:
+    implementation: oap.cookbook.PlusMinusCalculator
+    parameters:
+      calculator: "@service:calculator-master"

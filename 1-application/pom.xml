@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>oap</groupId>
+        <artifactId>oap.maven</artifactId>
+        <version>2.0.0</version>
+    </parent>
+
+    <packaging>pom</packaging>
+    <artifactId>1-application</artifactId>
+    <version>${application.project.version}</version>
+
+    <repositories>
+        <repository>
+            <id>oap</id>
+            <url>https://mvn.oaplatform.org</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>oap</id>
+            <url>https://mvn.oaplatform.org/</url>
+        </repository>
+    </distributionManagement>
+
+    <modules>
+        <module>application-master</module>
+        <module>application-api</module>
+        <module>application-slave</module>
+        <module>application-testing</module>
+    </modules>
+
+    <properties>
+        <oap.project.version>8.0.1</oap.project.version>
+
+        <oap.deps.oap.version>8.0.0</oap.deps.oap.version>
+        <oap.deps.assertj.version>3.12.2</oap.deps.assertj.version>
+        <oap.deps.guava.version>28.2-jre</oap.deps.guava.version>
+        <oap.deps.logback.version>1.2.3</oap.deps.logback.version>
+        <oap.deps.slf4j.version>1.7.21</oap.deps.slf4j.version>
+        <oap.deps.lombok.version>1.18.14</oap.deps.lombok.version>
+
+    </properties>
+</project>

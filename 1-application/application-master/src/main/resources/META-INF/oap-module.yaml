@@ -1,0 +1,5 @@
+name: application-master
+services:
+  stack-calculator:
+    implementation: oap.cookbook.Calculator
+    name: stack-calculator
