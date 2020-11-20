@@ -5,7 +5,7 @@ import java.util.Optional;
 public interface StackCalculator {
     void push( Integer i );
 
-    Optional<Integer> pick();
+    Optional<Integer> peek();
 
     void apply( Operation operation );
 

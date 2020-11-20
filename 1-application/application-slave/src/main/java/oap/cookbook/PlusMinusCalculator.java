@@ -16,7 +16,7 @@ public class PlusMinusCalculator {
         calculator.push( a );
         calculator.push( b );
         calculator.apply( PLUS );
-        Optional<Integer> result = calculator.pick();
+        Optional<Integer> result = calculator.peek();
         calculator.clear();
         return result.orElseThrow();
     }
@@ -25,7 +25,7 @@ public class PlusMinusCalculator {
         calculator.push( a );
         calculator.push( b );
         calculator.apply( MINUS );
-        Optional<Integer> result = calculator.pick();
+        Optional<Integer> result = calculator.peek();
         calculator.clear();
         return result.orElseThrow();
     }

@@ -7,7 +7,8 @@ import java.util.Stack;
 import static oap.cookbook.StackCalculator.Operation.MINUS;
 import static oap.cookbook.StackCalculator.Operation.PLUS;
 
-public class Calculator implements StackCalculator {
+
+public class LocalCalculator implements StackCalculator {
     private final Stack<Integer> stack = new Stack<>();
     private final Map<Operation, Runnable> operations = Map.of(
         PLUS, () -> stack.push( stack.pop() + stack.pop() ),

@@ -5,6 +5,9 @@ services:
     remote:
       name: stack-calculator
 
+  calculator-local:
+    implementation: oap.cookbook.LocalCalculator
+
   plusminuscalculator:
     implementation: oap.cookbook.PlusMinusCalculator
     parameters:
