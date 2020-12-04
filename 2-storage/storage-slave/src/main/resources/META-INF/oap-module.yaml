@@ -5,7 +5,7 @@ services:
     remote:
       name: user-storage
 
-  user-relicator:
+  user-replicator:
     implementation: oap.storage.Replicator
     parameters:
       master: "@service:user-storage-master"

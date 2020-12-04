@@ -22,7 +22,7 @@ public class MasterSlaveTest extends Fixtures {
         UserStorage master = kernel.service( "user-storage" );
         master.store( new User( "john@google.com", "John Smith" ) );
 
-        kernel.<Replicator<String, User>>service( "user-relicator" ).replicateNow();
+        kernel.<Replicator<String, User>>service( "user-replicator" ).replicateNow();
 
         SlaveUserStorage slave = kernel.service( "client-user-storage" );
         assertThat( slave.list() )
