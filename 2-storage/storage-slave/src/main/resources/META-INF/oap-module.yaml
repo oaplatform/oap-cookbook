@@ -1,0 +1,16 @@
+name: storage-slave
+services:
+  user-storage-master:
+    implementation: oap.storage.ReplicationMaster
+    remote:
+      name: user-storage
+
+  user-relicator:
+    implementation: oap.storage.Replicator
+    parameters:
+      master: "@service:user-storage-master"
+      slave: "@service:client-user-storage"
+      interval: 1m
+
+  client-user-storage:
+    implementation: oap.cookbook.storage.SlaveUserStorage
