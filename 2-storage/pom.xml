@@ -12,7 +12,7 @@
 
     <packaging>pom</packaging>
     <artifactId>2-storage</artifactId>
-    <version>${storage.project.version}</version>
+    <version>${revision}</version>
 
     <repositories>
         <repository>
@@ -36,10 +36,10 @@
     </modules>
 
     <properties>
-        <storage.project.version>1.0.0</storage.project.version>
+        <revision>1.0.0</revision>
 
-        <oap.deps.oap.version>8.2.23</oap.deps.oap.version>
-        <oap.deps.storage.version>8.1.1</oap.deps.storage.version>
+        <oap.deps.oap.version>8.6.16</oap.deps.oap.version>
+        <oap.deps.storage.version>8.1.6</oap.deps.storage.version>
         <oap.deps.assertj.version>3.12.2</oap.deps.assertj.version>
         <oap.deps.guava.version>28.2-jre</oap.deps.guava.version>
         <oap.deps.logback.version>1.2.3</oap.deps.logback.version>
