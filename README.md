@@ -96,3 +96,5 @@ Application configuration consists from two blocks:
 
 Specified application configuration will be merged with modules service configurations.</br>
 The specified list of profiles will be considered by the platform as `active` profiles.
+
+![OAP BOOT](OAP modules.png)
