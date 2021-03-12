@@ -5,7 +5,7 @@
     <parent>
         <artifactId>2-storage</artifactId>
         <groupId>oap</groupId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

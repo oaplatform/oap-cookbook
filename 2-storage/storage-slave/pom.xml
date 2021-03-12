@@ -5,7 +5,7 @@
     <parent>
         <artifactId>2-storage</artifactId>
         <groupId>oap</groupId>
-        <version>${storage.project.version}</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,7 +15,7 @@
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>storage-api</artifactId>
-            <version>${storage.project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
