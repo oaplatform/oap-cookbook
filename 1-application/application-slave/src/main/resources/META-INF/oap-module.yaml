@@ -1,4 +1,4 @@
-name: application-master
+name: application-slave
 services:
   calculator-master:
     implementation: oap.cookbook.StackCalculator
@@ -11,4 +11,4 @@ services:
   plusminuscalculator:
     implementation: oap.cookbook.PlusMinusCalculator
     parameters:
-      calculator: "@service:calculator-master"
+      calculator: modules.this.calculator-master

@@ -6,7 +6,7 @@ import static oap.cookbook.StackCalculator.Operation.MINUS;
 import static oap.cookbook.StackCalculator.Operation.PLUS;
 
 public class PlusMinusCalculator {
-    private StackCalculator calculator;
+    private final StackCalculator calculator;
 
     public PlusMinusCalculator( StackCalculator calculator ) {
         this.calculator = calculator;

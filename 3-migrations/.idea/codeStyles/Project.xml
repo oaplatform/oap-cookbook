@@ -1,11 +1,15 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
-    <option name="LINE_SEPARATOR" value="&#10;" />
-    <option name="RIGHT_MARGIN" value="170" />
     <JavaCodeStyleSettings>
       <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
       <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
     </JavaCodeStyleSettings>
+    <ScalaCodeStyleSettings>
+      <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+    </ScalaCodeStyleSettings>
+    <XML>
+      <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+    </XML>
     <codeStyleSettings language="JAVA">
       <option name="SPACE_WITHIN_PARENTHESES" value="true" />
       <option name="SPACE_WITHIN_METHOD_CALL_PARENTHESES" value="true" />
@@ -40,3 +44,4 @@
     </codeStyleSettings>
   </code_scheme>
 </component>
+

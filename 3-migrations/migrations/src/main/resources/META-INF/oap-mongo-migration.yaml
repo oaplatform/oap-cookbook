@@ -1,0 +1,8 @@
+migrations:
+  users:
+    - version:
+        main: 1
+      script: /oap/cookbook/migrations/default.migration.js
+    - version:
+        main: 2
+      script: /oap/cookbook/migrations/name.migration.js

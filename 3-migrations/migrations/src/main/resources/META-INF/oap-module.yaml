@@ -1,0 +1,28 @@
+name: migrations
+dependsOn:
+  - oap-storage-mongo
+services:
+  user-mongo-client:
+    implementation: oap.storage.mongo.MongoClient
+    parameters:
+      host: localhost
+      port: 27017
+      database: users
+      shell: "@service:oap-storage-mongo-shell"
+    supervision:
+      supervise: true
+
+  user-persistence:
+    implementation: oap.storage.MongoPersistence
+    parameters:
+      mongoClient: "@service:user-mongo-client"
+      collectionName: users
+      delay: 1m
+      storage: "@service:user-storage"
+      watch: true
+    supervision:
+      supervise: true
+
+  user-storage:
+    implementation: oap.cookbook.migrations.UserStorage
+

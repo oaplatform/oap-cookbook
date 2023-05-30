@@ -1,0 +1,8 @@
+{
+  "_id": "john@smith.com",
+  "object": {
+    "email": "john@smith.com",
+    "name": "John Smith"
+  },
+  "object:type": "user"
+}
