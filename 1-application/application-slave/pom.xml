@@ -17,13 +17,11 @@
             <artifactId>application-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-
         <dependency>
             <groupId>oap</groupId>
             <artifactId>oap-stdlib</artifactId>
             <version>${oap.deps.oap.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -35,7 +33,6 @@
             <artifactId>assertj-core</artifactId>
             <version>${oap.deps.assertj.version}</version>
         </dependency>
-
     </dependencies>
 
 </project>
